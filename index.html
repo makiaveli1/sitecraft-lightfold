@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LIGHTFOLD is a SITECRAFT capability-orchestration forward test for semantic HTML, Three.js and GSAP ScrollTrigger.">
+  <title>LIGHTFOLD — Capability Orchestration Lab</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to product story</a>
+
+  <header class="site-header" aria-label="LIGHTFOLD navigation">
+    <a class="brand" href="#arrival" aria-label="LIGHTFOLD home">LIGHTFOLD</a>
+    <nav class="chapter-nav" aria-label="Product chapters">
+      <a href="#form">Form</a>
+      <a href="#light">Light</a>
+      <a href="#mechanism">Mechanism</a>
+      <a href="#scale">Scale</a>
+      <a href="#finish">Finish</a>
+    </nav>
+    <span class="lab-mark" aria-hidden="true">LAB 02</span>
+  </header>
+
+  <div id="runtime-status" class="sr-only" aria-live="polite"></div>
+
+  <div class="spatial-stage" aria-hidden="true">
+    <div class="stage-wash"></div>
+    <div class="fallback-sculpture" id="fallback-sculpture">
+      <span class="fallback-panel fallback-panel--1"></span>
+      <span class="fallback-panel fallback-panel--2"></span>
+      <span class="fallback-panel fallback-panel--3"></span>
+      <span class="fallback-panel fallback-panel--4"></span>
+      <span class="fallback-panel fallback-panel--5"></span>
+      <span class="fallback-panel fallback-panel--6"></span>
+      <span class="fallback-panel fallback-panel--7"></span>
+    </div>
+    <canvas id="scene" tabindex="-1"></canvas>
+    <div class="stage-index" aria-hidden="true">
+      <span>07 planes</span>
+      <span>1260 mm</span>
+      <span>2700 K</span>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="chapter chapter--arrival" id="arrival" data-chapter="arrival">
+      <div class="chapter-copy chapter-copy--left">
+        <p class="eyebrow">Sculptural light / study 01</p>
+        <h1>Light, folded<br>into structure.</h1>
+        <p class="lede">LIGHTFOLD is a fictional standing object made from seven slim planes. Its shape changes less than its light does.</p>
+        <div class="measure-row" aria-label="Product dimensions">
+          <span><strong>1260</strong> mm high</span>
+          <span><strong>310</strong> mm deep</span>
+          <span><strong>07</strong> planes</span>
+        </div>
+        <a class="text-link" href="#form">Read the object <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="chapter" id="form" data-chapter="form">
+      <div class="chapter-copy chapter-copy--right">
+        <p class="chapter-number">01 / Form</p>
+        <h2>One silhouette.<br>Seven decisions.</h2>
+        <p>The body is not a shell. Seven narrow planes lean toward one another, each holding enough distance to let light escape at the edges.</p>
+        <p class="annotation">No plane repeats the exact angle of the one before it.</p>
+      </div>
+    </section>
+
+    <section class="chapter" id="light" data-chapter="light">
+      <div class="chapter-copy chapter-copy--left chapter-copy--narrow">
+        <p class="chapter-number">02 / Light</p>
+        <h2>The glow lives<br>between surfaces.</h2>
+        <p>A warm core is hidden inside the fold. What reaches the room is reflected light, softened by metal before it reaches the eye.</p>
+        <dl class="facts">
+          <div><dt>Temperature</dt><dd>2700 K</dd></div>
+          <div><dt>Dimming</dt><dd>1–100%</dd></div>
+          <div><dt>Source</dt><dd>Indirect LED</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="chapter chapter--mechanism" id="mechanism" data-chapter="mechanism">
+      <div class="chapter-copy chapter-copy--right">
+        <p class="chapter-number">03 / Mechanism</p>
+        <h2>Nothing decorative<br>is holding it together.</h2>
+        <p>The same narrow spine that carries power also sets the spacing of the seven planes. The object can open for service without changing its exterior language.</p>
+        <ol class="mechanism-list" aria-label="LIGHTFOLD construction sequence">
+          <li><span>01</span> folded aluminium plane</li>
+          <li><span>02</span> concealed hinge rail</li>
+          <li><span>03</span> reflected light channel</li>
+          <li><span>04</span> weighted mineral base</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="chapter" id="scale" data-chapter="scale">
+      <div class="chapter-copy chapter-copy--left chapter-copy--narrow">
+        <p class="chapter-number">04 / Scale</p>
+        <h2>Closer to furniture<br>than a lamp.</h2>
+        <p>At 1.26 metres, LIGHTFOLD sits below eye level but above the furniture line. It is meant to alter the edge of a room, not dominate its centre.</p>
+        <div class="scale-rule" aria-label="Height 1260 millimetres">
+          <span>0</span><span class="rule-line"></span><strong>1260 mm</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter chapter--finish" id="finish" data-chapter="finish">
+      <div class="chapter-copy chapter-copy--right">
+        <p class="chapter-number">05 / Finish</p>
+        <h2>Let the material<br>change the temperature.</h2>
+        <p>The form stays fixed. Finish changes how much of the light is absorbed, reflected, or allowed to disappear into the room.</p>
+
+        <div class="finish-control" role="group" aria-label="Choose LIGHTFOLD finish">
+          <button type="button" class="finish-button is-selected" data-finish="porcelain" aria-pressed="true">
+            <span class="swatch swatch--porcelain" aria-hidden="true"></span>
+            <span><strong>Porcelain</strong><small>soft mineral white</small></span>
+          </button>
+          <button type="button" class="finish-button" data-finish="smoke" aria-pressed="false">
+            <span class="swatch swatch--smoke" aria-hidden="true"></span>
+            <span><strong>Smoke</strong><small>graphite grey</small></span>
+          </button>
+          <button type="button" class="finish-button" data-finish="copper" aria-pressed="false">
+            <span class="swatch swatch--copper" aria-hidden="true"></span>
+            <span><strong>Copper</strong><small>burnished warm metal</small></span>
+          </button>
+        </div>
+
+        <p class="provenance">A fictional product built only to test SITECRAFT's capability orchestration. No product is for sale.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>LIGHTFOLD / SITECRAFT FORWARD TEST 02</span>
+    <a href="#arrival">Back to top</a>
+  </footer>
+
+  <noscript>
+    <p class="noscript-note">The interactive sculpture is unavailable because JavaScript is disabled. The complete LIGHTFOLD story remains above in its static form.</p>
+  </noscript>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
